@@ -2,14 +2,14 @@
 //  MasterDetailUITests.swift
 //  MasterDetailUITests
 //
-//  Created by Baljeet Singh Raghav on 08/12/19.
-//  Copyright © 2019 Baljeet Singh Raghav. All rights reserved.
+//  Created by Deepak kumar on 22/12/19.
+//  Copyright © 2019 Deepak kumar. All rights reserved.
 //
 
 import XCTest
 
 class MasterDetailUITests: XCTestCase {
-
+    
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
 

@@ -2,7 +2,7 @@
 //  ModelClass_Parsing.swift
 //  MVVMExample
 //
-//  Created by Sanjeev Kumar Gautam on 9/23/19.
+//  Created by Deepak kumar on 22/12/19.
 //  Copyright © 2019 teastallstudio. All rights reserved.
 //
 

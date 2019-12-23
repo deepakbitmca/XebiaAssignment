@@ -2,8 +2,8 @@
 //  MasterViewController.swift
 //  MasterDetail
 //
-//  Created by Baljeet Singh Raghav on 08/12/19.
-//  Copyright © 2019 Baljeet Singh Raghav. All rights reserved.
+//  Created by Deepak kumar on 22/12/19.
+//  Copyright © 2019 Deepak kumar. All rights reserved.
 //
 
 import UIKit
