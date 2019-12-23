@@ -1,7 +1,17 @@
-target 'MasterDetail' do
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
 
-use_frameworks!
+target 'AssignmentXebia' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+  pod 'MMDrawerController'
+  pod 'SwiftSpinner'
+  pod 'ReachabilitySwift'
+  # Pods for AssignmentXebia
 
-pod 'Kingfisher'
-pod 'NVActivityIndicatorView'
+  target 'AssignmentXebiaTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
 end

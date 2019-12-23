@@ -1,0 +1,6 @@
+framework module Pods_AssignmentXebiaTests {
+  umbrella header "Pods-AssignmentXebiaTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

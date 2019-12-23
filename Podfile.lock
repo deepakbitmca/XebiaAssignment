@@ -1,22 +1,35 @@
 PODS:
-  - Kingfisher (5.2.0)
-  - NVActivityIndicatorView (4.6.1):
-    - NVActivityIndicatorView/Presenter (= 4.6.1)
-  - NVActivityIndicatorView/Presenter (4.6.1)
+  - MMDrawerController (0.6.0):
+    - MMDrawerController/Core (= 0.6.0)
+    - MMDrawerController/MMDrawerBarButtonItem (= 0.6.0)
+    - MMDrawerController/MMDrawerVisualStates (= 0.6.0)
+    - MMDrawerController/Subclass (= 0.6.0)
+  - MMDrawerController/Core (0.6.0)
+  - MMDrawerController/MMDrawerBarButtonItem (0.6.0):
+    - MMDrawerController/Core
+  - MMDrawerController/MMDrawerVisualStates (0.6.0):
+    - MMDrawerController/Core
+  - MMDrawerController/Subclass (0.6.0):
+    - MMDrawerController/Core
+  - ReachabilitySwift (4.3.0)
+  - SwiftSpinner (1.6.2)
 
 DEPENDENCIES:
-  - Kingfisher
-  - NVActivityIndicatorView
+  - MMDrawerController
+  - ReachabilitySwift
+  - SwiftSpinner
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - Kingfisher
-    - NVActivityIndicatorView
+    - MMDrawerController
+    - ReachabilitySwift
+    - SwiftSpinner
 
 SPEC CHECKSUMS:
-  Kingfisher: 07067cfacf371117330dceb4b4b8f5c4b691ab42
-  NVActivityIndicatorView: 4ca19fccc84595a78957336a086d00a49be6ce61
+  MMDrawerController: e3a54a5570388463ad3b36975251575b50c4e1a0
+  ReachabilitySwift: 408477d1b6ed9779dba301953171e017c31241f3
+  SwiftSpinner: 3a4c6dea425e5a31b908a8b1dd5dcd1ad4d96340
 
-PODFILE CHECKSUM: 46f53816ff1adf9e74f51e4540bee4d9b940c62e
+PODFILE CHECKSUM: 969ccbbbe1517e22f3e92a4ace38095ece5a505e
 
 COCOAPODS: 1.5.3
