@@ -36,7 +36,7 @@ class RecordListModel:JSONDecodable {
         title = json["title"].stringValue
         abstract = json["abstract"].stringValue
         type = json["title"].stringValue
-        published_date = json["title"].stringValue
+        published_date = json["published_date"].stringValue
         media = json["media"].array?.decode()
     }
 }

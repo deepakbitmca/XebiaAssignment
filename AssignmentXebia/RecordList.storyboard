@@ -28,7 +28,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="h9B-we-Kmc">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="h9B-we-Kmc">
                                 <rect key="frame" x="0.0" y="86" width="414" height="810"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
@@ -160,11 +160,28 @@
                     <navigationItem key="navigationItem" id="713-WH-yIQ"/>
                     <connections>
                         <outlet property="tableViewRecordList" destination="h9B-we-Kmc" id="Y60-5n-JEi"/>
+                        <segue destination="ndx-UY-CPb" kind="show" identifier="detailVC" id="CWC-dp-pGv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ckH-Oa-Q8Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="408.69565217391306" y="184.82142857142856"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="uUd-Mj-q19">
+            <objects>
+                <viewController id="ndx-UY-CPb" customClass="DetailViewController" customModule="AssignmentXebia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7qT-wx-Ooi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="mqN-Os-3NO"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="JRV-v2-nuW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jla-45-aLg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1251" y="185"/>
         </scene>
     </scenes>
     <resources>

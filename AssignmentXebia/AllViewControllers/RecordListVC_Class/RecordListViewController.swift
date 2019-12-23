@@ -123,14 +123,20 @@ extension RecordListViewController : UITableViewDelegate, UITableViewDataSource 
         
         let viewBG = UIView()
         viewBG.frame = CGRect(x: 0, y: 0, width: cell.frame.size.width, height: cell.frame.size.height)
-        viewBG.backgroundColor = Macros.primaryColor
+        //viewBG.backgroundColor = Macros.primaryColor
         cell.selectedBackgroundView = viewBG
+        
+        cell.viewCellBG.layer.shadowColor = UIColor.black.cgColor
+        cell.viewCellBG.layer.shadowOpacity = 0.25
+        cell.viewCellBG.layer.shadowRadius = 3
+        cell.viewCellBG.layer.shadowOffset = CGSize(width: 3, height: 3)
         
         let record = records[indexPath.row]
         
         //For Title
         cell.lblTitle.text = record.title
         
+        cell.imgModuleIcon.layer.cornerRadius = cell.imgModuleIcon.frame.size.width/2
         if let iamgeUrl = record.media?.first?.media_metadata?.first?.url {
             DispatchQueue.global(qos: .userInitiated).async {
                 let imageData = ImageUtility.shared()?.getImageFromUrl(iamgeUrl)
@@ -155,7 +161,7 @@ extension RecordListViewController : UITableViewDelegate, UITableViewDataSource 
     
     // method to run when table view cell is tapped
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        self.performSegue(withIdentifier: "detailVC", sender: nil)
     }
     
 }

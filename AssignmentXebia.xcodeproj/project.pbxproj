@@ -28,6 +28,7 @@
 		F6D0A35423AF491300D03254 /* RecordList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6D0A35323AF491300D03254 /* RecordList.storyboard */; };
 		F6D0A35823AF614800D03254 /* RecordListTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D0A35723AF614800D03254 /* RecordListTableCell.swift */; };
 		F6D0A35E23AF6AD800D03254 /* ImageUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = F6D0A35D23AF6AD800D03254 /* ImageUtility.m */; };
+		F6D0A36223B1256600D03254 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D0A36123B1256600D03254 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		F6D0A35C23AF6AD700D03254 /* AssignmentXebia-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AssignmentXebia-Bridging-Header.h"; sourceTree = "<group>"; };
 		F6D0A35D23AF6AD800D03254 /* ImageUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageUtility.m; sourceTree = "<group>"; };
 		F6D0A35F23AF6AE300D03254 /* ImageUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageUtility.h; sourceTree = "<group>"; };
+		F6D0A36123B1256600D03254 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		F76A15CD964815483EC84AC6 /* Pods-AssignmentXebiaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AssignmentXebiaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AssignmentXebiaTests/Pods-AssignmentXebiaTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -114,12 +116,12 @@
 			path = Utility;
 			sourceTree = "<group>";
 		};
-		5F2B5A6223B0D23800263388 /* Model */ = {
+		5F2B5A6223B0D23800263388 /* Model_Class */ = {
 			isa = PBXGroup;
 			children = (
 				5F2B5A6323B0D24E00263388 /* RecordListModel.swift */,
 			);
-			path = Model;
+			path = Model_Class;
 			sourceTree = "<group>";
 		};
 		83A6BE6E53E36D324E695049 /* Frameworks */ = {
@@ -220,6 +222,7 @@
 			children = (
 				F6D0A35123AF47EA00D03254 /* LeftVC_Class */,
 				F6D0A35223AF480500D03254 /* RecordListVC_Class */,
+				F6D0A36323B1256C00D03254 /* RecordDetailVC_Class */,
 			);
 			path = AllViewControllers;
 			sourceTree = "<group>";
@@ -235,9 +238,9 @@
 		F6D0A35223AF480500D03254 /* RecordListVC_Class */ = {
 			isa = PBXGroup;
 			children = (
-				5F2B5A6223B0D23800263388 /* Model */,
 				F6D0A34D23AF479600D03254 /* RecordListViewController.swift */,
 				F6D0A35723AF614800D03254 /* RecordListTableCell.swift */,
+				5F2B5A6223B0D23800263388 /* Model_Class */,
 			);
 			path = RecordListVC_Class;
 			sourceTree = "<group>";
@@ -249,6 +252,14 @@
 				F6D0A35D23AF6AD800D03254 /* ImageUtility.m */,
 			);
 			path = ImageUtility_Class;
+			sourceTree = "<group>";
+		};
+		F6D0A36323B1256C00D03254 /* RecordDetailVC_Class */ = {
+			isa = PBXGroup;
+			children = (
+				F6D0A36123B1256600D03254 /* DetailViewController.swift */,
+			);
+			path = RecordDetailVC_Class;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -444,6 +455,7 @@
 				F6D0A35823AF614800D03254 /* RecordListTableCell.swift in Sources */,
 				F6D0A35023AF47E400D03254 /* LeftMenuViewController.swift in Sources */,
 				F6D0A31923AF42BF00D03254 /* AppDelegate.swift in Sources */,
+				F6D0A36223B1256600D03254 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
